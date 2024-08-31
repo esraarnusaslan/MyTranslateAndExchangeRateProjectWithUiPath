@@ -1,0 +1,501 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="804,5622.4" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>UiPath.Shared.ObjectLibrary</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+      <x:String>UiPath.CV.Activities.Interfaces</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.Vision.OCR</x:String>
+      <x:String>UiPath.OCR.Contracts</x:String>
+      <x:String>UiPath.OCR.Activities</x:String>
+      <x:String>UiPath.OCR.Contracts.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Core</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Contracts</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="688,5557.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="str_Excel" />
+      <Variable x:TypeArguments="sd:DataTable" Name="dt_Excel" />
+      <Variable x:TypeArguments="x:String" Name="str_Fiyat" />
+      <Variable x:TypeArguments="x:String" Name="str_Almanca" />
+      <Variable x:TypeArguments="x:String" Name="str_İngilizce" />
+      <Variable x:TypeArguments="x:String" Name="str_Döviz" />
+      <Variable x:TypeArguments="x:String" Name="str_Nesne" />
+      <Variable x:TypeArguments="x:Int32" Name="counter" />
+      <Variable x:TypeArguments="x:String" Name="str_ResultAlmanca" />
+      <Variable x:TypeArguments="x:Boolean" Name="exist_Turkce" />
+      <Variable x:TypeArguments="x:String" Name="str_Resultİngilizce" />
+      <Variable x:TypeArguments="x:String" Name="str_Dolar" />
+      <Variable x:TypeArguments="ui:UiElement" Name="outputElement">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:String x:Key="SourceIdRef">NApplicationCard_1</x:String>
+            <x:String x:Key="SourcePropertyName">OutUiElement</x:String>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </Variable>
+      <Variable x:TypeArguments="x:String" Name="str_DolarKur" />
+      <Variable x:TypeArguments="x:String" Name="str_DilAlmanca" />
+      <Variable x:TypeArguments="x:String" Name="str_Dil" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Assign sap:VirtualizedContainerService.HintSize="625.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_1">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[str_Excel]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">C:\Users\GAMZE\Desktop\Translate.xlsx</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[dt_Excel]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="625.6,120" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Sayfa1" WorkbookPath="[str_Excel]" />
+    <uix:NApplicationCard CloseMode="Never" DisplayName="Use Browser Chrome: Currency Converter | Foreign Exchange Rates | Wise" sap:VirtualizedContainerService.HintSize="625.6,5235.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Always" OutUiElement="[outputElement]" ScopeGuid="eab8a205-e1bb-495a-adfb-9e9d1a054a7a" WindowResize="Maximize">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="592,4995.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Miktar'" sap:VirtualizedContainerService.HintSize="529.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_16" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="eab8a205-e1bb-495a-adfb-9e9d1a054a7a" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://wise.com/tr/currency-converter/" CVScreenId="6295df07-596b-40dd-aa99-641cfb4b4820" DesignTimeRectangle="311, 744, 429, 90" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='INPUT' aaname='Miktar' /&gt;" Guid="ee3bdca8-f598-4c63-af6c-01cbcdad1159" InformativeScreenshot="3eb5d43fa943acd8ae60d5d54a9bc80d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' url='https://wise.com/tr/currency-converter/' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Miktar'" EmptyFieldMode="MultiLine" sap:VirtualizedContainerService.HintSize="529.6,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="eab8a205-e1bb-495a-adfb-9e9d1a054a7a" Text="1" Version="V4">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://wise.com/tr/currency-converter/" CVScreenId="f65f1e70-f937-4843-8d46-cd56c7627f93" DesignTimeRectangle="311, 744, 429, 90" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='INPUT' aaname='Miktar' class='form-control np-form-control np-form-control--size-auto np-input np-input--shape-rectangle' /&gt;" Guid="07a79c12-6f9c-44b0-a95d-8c502cddc7e8" InformativeScreenshot="c59188125972b3eca6baff8b91eae4c7.png" ScopeSelectorArgument="&lt;html app='chrome.exe' url='https://wise.com/tr/currency-converter/' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NGetText ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Get Text 'Dolar'" sap:VirtualizedContainerService.HintSize="529.6,189.6" sap2010:WorkflowViewState.IdRef="NGetText_4" OutUiElement="{x:Null}" ScopeIdentifier="eab8a205-e1bb-495a-adfb-9e9d1a054a7a" ScrapingOptions="{x:Null}" TextString="[str_Dolar]" Timeout="{x:Null}" Version="V4" WordsInfo="{x:Null}">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://wise.com/tr/currency-converter/" CVScreenId="d9481fad-7796-47f5-8259-b750e2bb7743" DesignTimeRectangle="1009, 744, 425, 90" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='INPUT' aaname='Kar?ılı?ı' /&gt;" Guid="f1c96198-7b93-4103-a8ba-86480a3e31c0" ImageBase64="" InformativeScreenshot="cbbd5fc5661588341aa559435f136ea3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' url='https://wise.com/tr/currency-converter/' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <Assign sap:VirtualizedContainerService.HintSize="529.6,114.4" sap2010:WorkflowViewState.IdRef="Assign_15">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[str_DolarKur]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[str_Dolar]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="529.6,114.4" sap2010:WorkflowViewState.IdRef="NGoToUrl_3" Url="https://www.google.com/search?q=%C3%A7eviri&amp;rlz=1C1SQJL_trTR919TR919&amp;oq=%C3%A7eviri&amp;gs_lcrp=EgZjaHJvbWUqDggAEEUYJxg7GIAEGIoFMg4IABBFGCcYOxiABBiKBTIGCAEQRRhAMgoIAhAAGLEDGIAEMg8IAxAAGEMYsQMYgAQYigUyDwgEEAAYQxixAxiABBiKBTIGCAUQRRg9MgYIBhBFGD0yBggHEEUYPdIBBzk4OGowajSoAgCwAgE&amp;sourceid=chrome&amp;ie=UTF-8" Version="V4" />
+            <uix:NCheckState DisplayName="Check App State 'TEXTAREA tw-source-text…'" sap:VirtualizedContainerService.HintSize="529.6,56.8" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="eab8a205-e1bb-495a-adfb-9e9d1a054a7a" Version="V4">
+              <uix:NCheckState.IfExists>
+                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="449.6,259.2" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="387.2,168.8" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;sayfa açıldı&quot;]" />
+                </Sequence>
+              </uix:NCheckState.IfExists>
+              <uix:NCheckState.IfNotExists>
+                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="449.6,205.6" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Throw Exception="[new SystemException(&quot;Sayfa açılamadı&quot;)]" sap:VirtualizedContainerService.HintSize="387.2,115.2" sap2010:WorkflowViewState.IdRef="Throw_1" />
+                </Sequence>
+              </uix:NCheckState.IfNotExists>
+              <uix:NCheckState.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.google.com/search?q=ceviri&amp;rlz=1C1SQJL_trTR919TR919&amp;oq=ceviri&amp;gs_lcrp=EgZjaHJvbWUqCAgAEEUYJxg7MggIABBFGCcYOzIGCAEQRRhAMgwIAhAAGEMYgAQYigUyBwgDEAAYgAQyBwgEEAAYgAQyBwgFEAAYgAQyBggGEAAYAzIHCAcQABiABNIBCDEyMDdqMGo3qAIAsAIA&amp;sourceid=chrome&amp;ie=UTF-8" CVScreenId="78c96ff9-dec7-42b1-aefb-eb601b0a7a5a" DesignTimeRectangle="273, 446, 325, 50" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='tw-source-text-ta' tag='TEXTAREA' /&gt;" Guid="641c07fc-5ef7-4168-8d5d-0632944e9af6" InformativeScreenshot="057f37d86751778acb3602c62599f325.png" ScopeSelectorArgument="&lt;html app='chrome.exe' url='https://www.google.com/search?q=ceviri&amp;amp;rlz=1C1SQJL_trTR919TR919&amp;amp;oq=ceviri&amp;amp;gs_lcrp=EgZjaHJvbWUqCAgAEEUYJxg7MggIABBFGCcYOzIGCAEQRRhAMgwIAhAAGEMYgAQYigUyBwgDEAAYgAQyBwgEEAAYgAQyBwgFEAAYgAQyBggGEAAYAzIHCAcQABiABNIBCDEyMDdqMGo3qAIAsAIA&amp;amp;sourceid=chrome&amp;amp;ie=UTF-8' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+              </uix:NCheckState.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NCheckState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click language change" sap:VirtualizedContainerService.HintSize="529.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="eab8a205-e1bb-495a-adfb-9e9d1a054a7a" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.google.com/search?q=ceviri&amp;sca_esv=9df8b1bcf95d0dda&amp;sca_upv=1&amp;rlz=1C1SQJL_trTR919TR919&amp;sxsrf=ADLYWIKJAqbP4Q-1bA708pyvZjVLjCg0sQ%3A1725038469786&amp;ei=hf_RZqfdL4Ppi-gPrKCSSA&amp;ved=0ahUKEwjns9yJnZ2IAxWD9AIHHSyQBAkQ4dUDCA8&amp;uact=5&amp;oq=ceviri&amp;gs_lp=Egxnd3Mtd2l6LXNlcnAiBmNldmlyaTIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzINEAAYgAQYsAMYQxiKBTINEAAYgAQYsAMYQxiKBTINEAAYgAQYsAMYQxiKBTINEAAYgAQYsAMYQxiKBTITEC4YgAQYsAMYQxjIAxiKBdgBATITEC4YgAQYsAMYQxjIAxiKBdgBATITEC4YgAQYsAMYQxjIAxiKBdgBATITEC4YgAQYsAMYQxjIAxiKBdgBATITEC4YgAQYsAMYQxjIAxiKBdgBAUitB1AAWABwAXgBkAEAmAEAoAEAqgEAuAEDyAEAmAIBoAIKmAMAiAYBkAYRugYGCAEQARgIkgcBMaAHAA&amp;sclient=gws-wiz-serp" DesignTimeRectangle="631, 370, 57, 52" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl tag='SPAN' uipath-html-title='Dilleri de?i?tir' /&gt;" Guid="495d09cb-1834-4264-bd23-46811351dd75" ImageBase64="" InformativeScreenshot="f98967660f120106209d6cadd3fcd314.png" ScopeSelectorArgument="&lt;html app='chrome.exe' url='https://www.google.com/search?q=ceviri&amp;amp;sca_esv=9df8b1bcf95d0dda&amp;amp;sca_upv=1&amp;amp;rlz=1C1SQJL_trTR919TR919&amp;amp;sxsrf=ADLYWIKJAqbP4Q-1bA708pyvZjVLjCg0sQ%3A1725038469786&amp;amp;ei=hf_RZqfdL4Ppi-gPrKCSSA&amp;amp;ved=0ahUKEwjns9yJnZ2IAxWD9AIHHSyQBAkQ4dUDCA8&amp;amp;uact=5&amp;amp;oq=ceviri&amp;amp;gs_lp=Egxnd3Mtd2l6LXNlcnAiBmNldmlyaTIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzINEAAYgAQYsAMYQxiKBTINEAAYgAQYsAMYQxiKBTINEAAYgAQYsAMYQxiKBTINEAAYgAQYsAMYQxiKBTITEC4YgAQYsAMYQxjIAxiKBdgBATITEC4YgAQYsAMYQxjIAxiKBdgBATITEC4YgAQYsAMYQxjIAxiKBdgBATITEC4YgAQYsAMYQxjIAxiKBdgBATITEC4YgAQYsAMYQxjIAxiKBdgBAUitB1AAWABwAXgBkAEAmAEAoAEAqgEAuAEDyAEAmAIBoAIKmAMAiAYBkAYRugYGCAEQARgIkgcBMaAHAA&amp;amp;sclient=gws-wiz-serp' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_Excel]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="529.6,3693.6" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+              <ui:ForEachRow.Body>
+                <ActivityAction x:TypeArguments="sd:DataRow">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,3503.2" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_2">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[str_Nesne]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[CurrentRow("Nesne").ToString]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_3">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[str_Fiyat]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[CurrentRow("Fiyat TL").ToString]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_4">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[str_Almanca]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[CurrentRow("Almanca").ToString]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_5">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[str_İngilizce]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[CurrentRow("İngilizce").ToString]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_6">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[str_Döviz]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[CurrentRow("Döviz $").ToString]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click for write" sap:VirtualizedContainerService.HintSize="433.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="eab8a205-e1bb-495a-adfb-9e9d1a054a7a" Version="V4">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.google.com/search?q=ceviri&amp;sca_esv=9df8b1bcf95d0dda&amp;sca_upv=1&amp;rlz=1C1SQJL_trTR919TR919&amp;sxsrf=ADLYWIKJAqbP4Q-1bA708pyvZjVLjCg0sQ%3A1725038469786&amp;ei=hf_RZqfdL4Ppi-gPrKCSSA&amp;ved=0ahUKEwjns9yJnZ2IAxWD9AIHHSyQBAkQ4dUDCA8&amp;uact=5&amp;oq=ceviri&amp;gs_lp=Egxnd3Mtd2l6LXNlcnAiBmNldmlyaTIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzINEAAYgAQYsAMYQxiKBTINEAAYgAQYsAMYQxiKBTINEAAYgAQYsAMYQxiKBTINEAAYgAQYsAMYQxiKBTITEC4YgAQYsAMYQxjIAxiKBdgBATITEC4YgAQYsAMYQxjIAxiKBdgBATITEC4YgAQYsAMYQxjIAxiKBdgBATITEC4YgAQYsAMYQxjIAxiKBdgBATITEC4YgAQYsAMYQxjIAxiKBdgBAUitB1AAWABwAXgBkAEAmAEAoAEAqgEAuAEDyAEAmAIBoAIKmAMAiAYBkAYRugYGCAEQARgIkgcBMaAHAA&amp;sclient=gws-wiz-serp" CVScreenId="72944913-2b85-43cc-b234-977f25d15eac" DesignTimeRectangle="273, 446, 325, 50" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='TEXTAREA' placeholder='Metin girin' /&gt;" Guid="e87e5ae6-f0f9-4f0b-8c19-8b26cfd5bd2d" InformativeScreenshot="4cace66de453472fbb3549c6028815d9.png" ScopeSelectorArgument="&lt;html app='chrome.exe' url='https://www.google.com/search?q=ceviri&amp;amp;sca_esv=9df8b1bcf95d0dda&amp;amp;sca_upv=1&amp;amp;rlz=1C1SQJL_trTR919TR919&amp;amp;sxsrf=ADLYWIKJAqbP4Q-1bA708pyvZjVLjCg0sQ%3A1725038469786&amp;amp;ei=hf_RZqfdL4Ppi-gPrKCSSA&amp;amp;ved=0ahUKEwjns9yJnZ2IAxWD9AIHHSyQBAkQ4dUDCA8&amp;amp;uact=5&amp;amp;oq=ceviri&amp;amp;gs_lp=Egxnd3Mtd2l6LXNlcnAiBmNldmlyaTIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzINEAAYgAQYsAMYQxiKBTINEAAYgAQYsAMYQxiKBTINEAAYgAQYsAMYQxiKBTINEAAYgAQYsAMYQxiKBTITEC4YgAQYsAMYQxjIAxiKBdgBATITEC4YgAQYsAMYQxjIAxiKBdgBATITEC4YgAQYsAMYQxjIAxiKBdgBATITEC4YgAQYsAMYQxjIAxiKBdgBATITEC4YgAQYsAMYQxjIAxiKBdgBAUitB1AAWABwAXgBkAEAmAEAoAEAqgEAuAEDyAEAmAIBoAIKmAMAiAYBkAYRugYGCAEQARgIkgcBMaAHAA&amp;amp;sclient=gws-wiz-serp' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                    </uix:NClick>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Write word'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="433.6,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="eab8a205-e1bb-495a-adfb-9e9d1a054a7a" Text="[str_Nesne]" Version="V4">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.google.com/search?q=ceviri&amp;sca_esv=9df8b1bcf95d0dda&amp;sca_upv=1&amp;rlz=1C1SQJL_trTR919TR919&amp;sxsrf=ADLYWIKJAqbP4Q-1bA708pyvZjVLjCg0sQ%3A1725038469786&amp;ei=hf_RZqfdL4Ppi-gPrKCSSA&amp;ved=0ahUKEwjns9yJnZ2IAxWD9AIHHSyQBAkQ4dUDCA8&amp;uact=5&amp;oq=ceviri&amp;gs_lp=Egxnd3Mtd2l6LXNlcnAiBmNldmlyaTIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzINEAAYgAQYsAMYQxiKBTINEAAYgAQYsAMYQxiKBTINEAAYgAQYsAMYQxiKBTINEAAYgAQYsAMYQxiKBTITEC4YgAQYsAMYQxjIAxiKBdgBATITEC4YgAQYsAMYQxjIAxiKBdgBATITEC4YgAQYsAMYQxjIAxiKBdgBATITEC4YgAQYsAMYQxjIAxiKBdgBATITEC4YgAQYsAMYQxjIAxiKBdgBAUitB1AAWABwAXgBkAEAmAEAoAEAqgEAuAEDyAEAmAIBoAIKmAMAiAYBkAYRugYGCAEQARgIkgcBMaAHAA&amp;sclient=gws-wiz-serp" CVScreenId="72944913-2b85-43cc-b234-977f25d15eac" DesignTimeRectangle="273, 446, 325, 50" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='TEXTAREA' placeholder='Metin girin' /&gt;" Guid="8aa3a688-ade4-4e3b-a68d-65fe371a6c46" InformativeScreenshot="6a5a1f2ee09ad6e04c81640026df1e0d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' url='https://www.google.com/search?q=ceviri&amp;amp;sca_esv=9df8b1bcf95d0dda&amp;amp;sca_upv=1&amp;amp;rlz=1C1SQJL_trTR919TR919&amp;amp;sxsrf=ADLYWIKJAqbP4Q-1bA708pyvZjVLjCg0sQ%3A1725038469786&amp;amp;ei=hf_RZqfdL4Ppi-gPrKCSSA&amp;amp;ved=0ahUKEwjns9yJnZ2IAxWD9AIHHSyQBAkQ4dUDCA8&amp;amp;uact=5&amp;amp;oq=ceviri&amp;amp;gs_lp=Egxnd3Mtd2l6LXNlcnAiBmNldmlyaTIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzINEAAYgAQYsAMYQxiKBTINEAAYgAQYsAMYQxiKBTINEAAYgAQYsAMYQxiKBTINEAAYgAQYsAMYQxiKBTITEC4YgAQYsAMYQxjIAxiKBdgBATITEC4YgAQYsAMYQxjIAxiKBdgBATITEC4YgAQYsAMYQxjIAxiKBdgBATITEC4YgAQYsAMYQxjIAxiKBdgBATITEC4YgAQYsAMYQxjIAxiKBdgBAUitB1AAWABwAXgBkAEAmAEAoAEAqgEAuAEDyAEAmAIBoAIKmAMAiAYBkAYRugYGCAEQARgIkgcBMaAHAA&amp;amp;sclient=gws-wiz-serp' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                      </uix:NTypeInto.Target>
+                      <uix:NTypeInto.VerifyOptions>
+                        <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionTypeIntoOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                        </uix:VerifyExecutionTypeIntoOptions>
+                      </uix:NTypeInto.VerifyOptions>
+                    </uix:NTypeInto>
+                    <uix:NGetText DisplayName="Get Text 'İngilizce'" sap:VirtualizedContainerService.HintSize="433.6,189.6" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="eab8a205-e1bb-495a-adfb-9e9d1a054a7a" TextString="[str_Resultİngilizce]" Version="V4">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.google.com/search?q=%C3%A7eviri&amp;rlz=1C1SQJL_trTR919TR919&amp;oq=%C3%A7eviri&amp;gs_lcrp=EgZjaHJvbWUqDggAEEUYJxg7GIAEGIoFMg4IABBFGCcYOxiABBiKBTIGCAEQRRhAMgoIAhAAGLEDGIAEMgoIAxAAGLEDGIAEMgoIBBAAGLEDGIAEMgoIBRAAGLEDGIAEMgYIBhBFGD0yBggHEEUYPdIBCDEyNzRqMGo3qAIAsAIA&amp;sourceid=chrome&amp;ie=UTF-8" CVScreenId="683f8d5a-bbdc-4a6b-affa-0ba020febea9" DesignTimeRectangle="711, 451, 153, 39" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='tw-target-text' tag='SPAN' aaname='*' innertext='*' /&gt;" Guid="22744cd5-d36f-44ba-9bbb-c5a312c5e3ce" ImageBase64="" InformativeScreenshot="13cec66c928e646f507ac2127502681b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' url='https://www.google.com/search?q=%C3%A7eviri&amp;amp;rlz=1C1SQJL_trTR919TR919&amp;amp;oq=%C3%A7eviri&amp;amp;gs_lcrp=EgZjaHJvbWUqDggAEEUYJxg7GIAEGIoFMg4IABBFGCcYOxiABBiKBTIGCAEQRRhAMgoIAhAAGLEDGIAEMgoIAxAAGLEDGIAEMgoIBBAAGLEDGIAEMgoIBRAAGLEDGIAEMgYIBhBFGD0yBggHEEUYPdIBCDEyNzRqMGo3qAIAsAIA&amp;amp;sourceid=chrome&amp;amp;ie=UTF-8' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                      </uix:NGetText.Target>
+                    </uix:NGetText>
+                    <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_10">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:Object">[CurrentRow.Item("İngilizce")]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[str_Resultİngilizce]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_16">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:Object">[CurrentRow.Item("Döviz $")]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:Object">[(CInt(str_Fiyat) * CDbl(str_DolarKur)).ToString()]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'İngilizce'" sap:VirtualizedContainerService.HintSize="433.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="eab8a205-e1bb-495a-adfb-9e9d1a054a7a" Version="V4">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.google.com/search?q=ceviri&amp;rlz=1C1SQJL_trTR919TR919&amp;oq=ceviri&amp;gs_lcrp=EgZjaHJvbWUqCAgAEEUYJxg7MggIABBFGCcYOzIGCAEQRRhAMgwIAhAAGEMYgAQYigUyBwgDEAAYgAQyBwgEEAAYgAQyBwgFEAAYgAQyBggGEAAYAzIHCAcQABiABNIBCDEyMDdqMGo3qAIAsAIA&amp;sourceid=chrome&amp;ie=UTF-8" CVScreenId="0d5e126f-ee2b-484a-927b-d93c7ac08d90" DesignTimeRectangle="661, 370, 407, 52" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl tag='DIV' innertext='İngilizce' idx='*' /&gt;" Guid="1ed35632-ba72-4939-8342-547d1ca1ac65" InformativeScreenshot="c84597de94e9953bd438281402314535.png" ScopeSelectorArgument="&lt;html app='chrome.exe' url='https://www.google.com/search?q=ceviri&amp;amp;rlz=1C1SQJL_trTR919TR919&amp;amp;oq=ceviri&amp;amp;gs_lcrp=EgZjaHJvbWUqCAgAEEUYJxg7MggIABBFGCcYOzIGCAEQRRhAMgwIAhAAGEMYgAQYigUyBwgDEAAYgAQyBwgEEAAYgAQyBwgFEAAYgAQyBggGEAAYAzIHCAcQABiABNIBCDEyMDdqMGo3qAIAsAIA&amp;amp;sourceid=chrome&amp;amp;ie=UTF-8' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                    </uix:NClick>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Translate Almanca Type İnto" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="433.6,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="eab8a205-e1bb-495a-adfb-9e9d1a054a7a" Text="Almanca" Version="V4">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.google.com/search?q=ceviri&amp;rlz=1C1SQJL_trTR919TR919&amp;oq=ceviri&amp;gs_lcrp=EgZjaHJvbWUqCAgAEEUYJxg7MggIABBFGCcYOzIGCAEQRRhAMgwIAhAAGEMYgAQYigUyBwgDEAAYgAQyBwgEEAAYgAQyBwgFEAAYgAQyBggGEAAYAzIHCAcQABiABNIBCDEyMDdqMGo3qAIAsAIA&amp;sourceid=chrome&amp;ie=UTF-8" CVScreenId="8235f585-731c-4283-9643-77034a9c9959" DesignTimeRectangle="263, 380, 745, 50" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='INPUT' placeholder='?u dile ?evir:' /&gt;" Guid="85a6f273-67e1-4924-93ec-e1ba5e4d00ab" InformativeScreenshot="33cc12a433ad4327134c11820aed0684.png" ScopeSelectorArgument="&lt;html app='chrome.exe' url='https://www.google.com/search?q=ceviri&amp;amp;rlz=1C1SQJL_trTR919TR919&amp;amp;oq=ceviri&amp;amp;gs_lcrp=EgZjaHJvbWUqCAgAEEUYJxg7MggIABBFGCcYOzIGCAEQRRhAMgwIAhAAGEMYgAQYigUyBwgDEAAYgAQyBwgEEAAYgAQyBwgFEAAYgAQyBggGEAAYAzIHCAcQABiABNIBCDEyMDdqMGo3qAIAsAIA&amp;amp;sourceid=chrome&amp;amp;ie=UTF-8' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                      </uix:NTypeInto.Target>
+                      <uix:NTypeInto.VerifyOptions>
+                        <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionTypeIntoOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                        </uix:VerifyExecutionTypeIntoOptions>
+                      </uix:NTypeInto.VerifyOptions>
+                    </uix:NTypeInto>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Almanca'" sap:VirtualizedContainerService.HintSize="433.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_14" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="eab8a205-e1bb-495a-adfb-9e9d1a054a7a" Version="V4">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.google.com/search?q=ceviri&amp;rlz=1C1SQJL_trTR919TR919&amp;oq=ceviri&amp;gs_lcrp=EgZjaHJvbWUqCAgAEEUYJxg7MggIABBFGCcYOzIGCAEQRRhAMgwIAhAAGEMYgAQYigUyBwgDEAAYgAQyBwgEEAAYgAQyBwgFEAAYgAQyBggGEAAYAzIHCAcQABiABNIBCDEyMDdqMGo3qAIAsAIA&amp;sourceid=chrome&amp;ie=UTF-8" CVScreenId="973d7397-acde-4681-ba6c-b075b8ab4531" DesignTimeRectangle="289, 449, 73, 20" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl tag='B' aaname='Almanca' innertext='Almanca' /&gt;" Guid="bf7900f9-330f-49d8-b92f-ec56fddf56bb" InformativeScreenshot="af86138abbee33bf3c8bcc83fb9cc49d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' url='https://www.google.com/search?q=ceviri&amp;amp;rlz=1C1SQJL_trTR919TR919&amp;amp;oq=ceviri&amp;amp;gs_lcrp=EgZjaHJvbWUqCAgAEEUYJxg7MggIABBFGCcYOzIGCAEQRRhAMgwIAhAAGEMYgAQYigUyBwgDEAAYgAQyBwgEEAAYgAQyBwgFEAAYgAQyBggGEAAYAzIHCAcQABiABNIBCDEyMDdqMGo3qAIAsAIA&amp;amp;sourceid=chrome&amp;amp;ie=UTF-8' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                    </uix:NClick>
+                    <uix:NGetText ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Get Text 'Almanca'" sap:VirtualizedContainerService.HintSize="433.6,189.6" sap2010:WorkflowViewState.IdRef="NGetText_3" InUiElement="{x:Null}" OutUiElement="{x:Null}" ScopeIdentifier="eab8a205-e1bb-495a-adfb-9e9d1a054a7a" ScrapingOptions="{x:Null}" TextString="[str_ResultAlmanca]" Timeout="{x:Null}" Version="V4" WordsInfo="{x:Null}">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.google.com/search?q=ceviri&amp;rlz=1C1SQJL_trTR919TR919&amp;oq=ceviri&amp;gs_lcrp=EgZjaHJvbWUqCAgAEEUYJxg7MggIABBFGCcYOzIGCAEQRRhAMgwIAhAAGEMYgAQYigUyBwgDEAAYgAQyBwgEEAAYgAQyBwgFEAAYgAQyBggGEAAYAzIHCAcQABiABNIBCDEyMDdqMGo3qAIAsAIA&amp;sourceid=chrome&amp;ie=UTF-8" CVScreenId="470fcc38-c728-4a2f-8fe2-d2a708157e05" DesignTimeRectangle="711, 451, 72, 39" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl parentid='tw-target-text' tag='SPAN' aaname='*' innertext='*' /&gt;" Guid="4bea2b2a-11b5-4851-b4ef-915af63f4c55" ImageBase64="" InformativeScreenshot="2b1731e0d265ad0222e0451908189722.png" ScopeSelectorArgument="&lt;html app='chrome.exe' url='https://www.google.com/search?q=ceviri&amp;amp;rlz=1C1SQJL_trTR919TR919&amp;amp;oq=ceviri&amp;amp;gs_lcrp=EgZjaHJvbWUqCAgAEEUYJxg7MggIABBFGCcYOzIGCAEQRRhAMgwIAhAAGEMYgAQYigUyBwgDEAAYgAQyBwgEEAAYgAQyBwgFEAAYgAQyBggGEAAYAzIHCAcQABiABNIBCDEyMDdqMGo3qAIAsAIA&amp;amp;sourceid=chrome&amp;amp;ie=UTF-8' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                      </uix:NGetText.Target>
+                    </uix:NGetText>
+                    <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_14">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:Object">[CurrentRow.Item("Almanca")]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[str_ResultAlmanca]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <ui:WriteRange StartingCell="{x:Null}" AddHeaders="True" DataTable="[dt_Excel]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="433.6,148" sap2010:WorkflowViewState.IdRef="WriteRange_3" SheetName="Sayfa1" WorkbookPath="[str_Excel]" />
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'close'" sap:VirtualizedContainerService.HintSize="433.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_11" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="eab8a205-e1bb-495a-adfb-9e9d1a054a7a" Version="V4">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.google.com/search?q=%C3%A7eviri&amp;rlz=1C1SQJL_trTR919TR919&amp;oq=%C3%A7eviri&amp;gs_lcrp=EgZjaHJvbWUqDggAEEUYJxg7GIAEGIoFMg4IABBFGCcYOxiABBiKBTIGCAEQRRhAMgoIAhAAGLEDGIAEMgoIAxAAGLEDGIAEMgoIBBAAGLEDGIAEMgYIBRBFGD0yBggGEEUYPTIGCAcQRRg90gEHODc5ajBqN6gCALACAA&amp;sourceid=chrome&amp;ie=UTF-8" CVScreenId="efd12d70-d61e-4428-9dce-0c043a684b2a" DesignTimeRectangle="591, 436, 57, 57" DesignTimeScaleFactor="1.25" ElementType="Icon" FullSelectorArgument="&lt;webctrl tag='SPAN' uipath-html-title='Kaynak metni temizle' /&gt;" Guid="c836ec64-0f97-4ce2-8418-202a173ffeeb" InformativeScreenshot="f750e6abbdc1fa1bb8a39d6b9d63fd76.png" ScopeSelectorArgument="&lt;html app='chrome.exe' url='https://www.google.com/search?q=%C3%A7eviri&amp;amp;rlz=1C1SQJL_trTR919TR919&amp;amp;oq=%C3%A7eviri&amp;amp;gs_lcrp=EgZjaHJvbWUqDggAEEUYJxg7GIAEGIoFMg4IABBFGCcYOxiABBiKBTIGCAEQRRhAMgoIAhAAGLEDGIAEMgoIAxAAGLEDGIAEMgoIBBAAGLEDGIAEMgYIBRBFGD0yBggGEEUYPTIGCAcQRRg90gEHODc5ajBqN6gCALACAA&amp;amp;sourceid=chrome&amp;amp;ie=UTF-8' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Almanca'" sap:VirtualizedContainerService.HintSize="433.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_12" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="eab8a205-e1bb-495a-adfb-9e9d1a054a7a" Version="V4">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.google.com/search?q=ceviri&amp;rlz=1C1SQJL_trTR919TR919&amp;oq=ceviri&amp;gs_lcrp=EgZjaHJvbWUqCAgAEEUYJxg7MggIABBFGCcYOzIGCAEQRRhAMgwIAhAAGEMYgAQYigUyBwgDEAAYgAQyBwgEEAAYgAQyBwgFEAAYgAQyBggGEAAYAzIHCAcQABiABNIBCDEyMDdqMGo3qAIAsAIA&amp;sourceid=chrome&amp;ie=UTF-8" CVScreenId="a093d0bb-6c93-4ec9-8225-800a946ee18d" DesignTimeRectangle="661, 370, 407, 52" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl tag='DIV' innertext='Almanca' idx='*' /&gt;" Guid="e0b1d59e-e0db-4e5a-9a29-3a5a4b55dfba" InformativeScreenshot="92cdd60802e2b1a36bbd82568f7f1de4.png" ScopeSelectorArgument="&lt;html app='chrome.exe' url='https://www.google.com/search?q=ceviri&amp;amp;rlz=1C1SQJL_trTR919TR919&amp;amp;oq=ceviri&amp;amp;gs_lcrp=EgZjaHJvbWUqCAgAEEUYJxg7MggIABBFGCcYOzIGCAEQRRhAMgwIAhAAGEMYgAQYigUyBwgDEAAYgAQyBwgEEAAYgAQyBwgFEAAYgAQyBggGEAAYAzIHCAcQABiABNIBCDEyMDdqMGo3qAIAsAIA&amp;amp;sourceid=chrome&amp;amp;ie=UTF-8' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                    </uix:NClick>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Translate İngilizce Type İnto" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="433.6,277.6" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="eab8a205-e1bb-495a-adfb-9e9d1a054a7a" Text="İngilizce" Version="V4">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.google.com/search?q=ceviri&amp;rlz=1C1SQJL_trTR919TR919&amp;oq=ceviri&amp;gs_lcrp=EgZjaHJvbWUqCAgAEEUYJxg7MggIABBFGCcYOzIGCAEQRRhAMgwIAhAAGEMYgAQYigUyBwgDEAAYgAQyBwgEEAAYgAQyBwgFEAAYgAQyBggGEAAYAzIHCAcQABiABNIBCDEyMDdqMGo3qAIAsAIA&amp;sourceid=chrome&amp;ie=UTF-8" CVScreenId="fd784764-57d0-4db5-87f3-e38bbc6fa3f9" DesignTimeRectangle="263, 380, 745, 50" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='INPUT' placeholder='?u dile ?evir:' /&gt;" Guid="49262df0-900c-4c32-9d77-4b584d0f5f2a" InformativeScreenshot="873a87e681b3460398d0b42573f59054.png" ScopeSelectorArgument="&lt;html app='chrome.exe' url='https://www.google.com/search?q=ceviri&amp;amp;rlz=1C1SQJL_trTR919TR919&amp;amp;oq=ceviri&amp;amp;gs_lcrp=EgZjaHJvbWUqCAgAEEUYJxg7MggIABBFGCcYOzIGCAEQRRhAMgwIAhAAGEMYgAQYigUyBwgDEAAYgAQyBwgEEAAYgAQyBwgFEAAYgAQyBggGEAAYAzIHCAcQABiABNIBCDEyMDdqMGo3qAIAsAIA&amp;amp;sourceid=chrome&amp;amp;ie=UTF-8' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                      </uix:NTypeInto.Target>
+                      <uix:NTypeInto.VerifyOptions>
+                        <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionTypeIntoOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                        </uix:VerifyExecutionTypeIntoOptions>
+                      </uix:NTypeInto.VerifyOptions>
+                    </uix:NTypeInto>
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEachRow.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:ForEachRow>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-9, -9, 1938, 1048" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGqSURBVFhHxZchTwNBEIXX4ZAoQkgqSHAEU0VTQwIEQ3A1BDCEihMkKAwJEiygDoEHjziH5wegKep+wtHXZunudKa7y5S7Jl+abKdv3r3Z22QNPvlXtpoPsiL/zsrhd/XfPA2yF/ScNK+pMaEcmRi54QvqoDDMYp2UTRuoZho4fexUS5tmLqztLbI9ggngj5xgKicPHVY/aODq7ZAVTOXu45jVj9oD7aNlTwypYE1iZWvBq8capwuiDNAUuuctts5Cx9Z/3mbrQJQBgKdwRWGKq+NGJsUPog1QYSnWncv1qDrLnxOQxpASP4gy0Ltte6Jocv95NlWXGj8IGsD76wqiuSSaGj+YaeDmvecJAkSPRCxuxKnxA9EAnpIKctgT7uJ1f+o3bkwU0UBMc2DHQeMPnRUW1sDB9YYnJuHOmJ5+SMTVlAhuwhgwa7c5zHB1HHMx0O23PAO7w3FwdRxqA9hobnMgHdMcagM0fmxerk5CbYAe0SnxA5UBvIJuc5ASP1AZ0MYPVAa08QP1HtBiGrqW/YIECrpYF7gWNnc5RU/3hlzbJXX8sMW4uTE/5Wxj6lTXMCkAAAAASUVORK5CYII=" sap2010:WorkflowViewState.IdRef="TargetApp_1" InformativeScreenshot="6967cd02246cd529e0cbf2d34ac9373f.jpg" Selector="&lt;html app='chrome.exe' title='Döviz Çevirici | Yabancı Döviz Kurları | Wise' /&gt;" Title="ceviri - Google'da Ara" Url="https://wise.com/tr/currency-converter/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
